@@ -67,3 +67,50 @@ main > .tagline {
 	width: 2.65rem;
 	height: 2.65rem;
 }
+
+iota .btn {
+  display: inline-block;
+  margin: 6px;
+  font-size: inherit;
+  line-height: 1.42;
+  padding: 0.6em 1.6em;
+  font-weight: normal;
+  border-width: 2px;
+  border-style: solid;
+  background: transparent;
+  border-radius: 1.46em;
+  cursor: pointer;
+  font-family: "Booster Next FY", "Avenir Next", Avenir, sans-serif;
+  user-select: none;
+  vertical-align: bottom;
+  position: relative;
+  border-style: solid;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+.iota .btn.btn-disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+.iota .btn.btn-disabled:active {
+  opacity: 0.6;
+}
+.iota .btn:hover:after {
+  transform: scaleX(1);
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.iota .btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 1.46em;
+  transform: scaleX(0.7);
+  opacity: 0;
+  transition: transform 0.8s, opacity 0.3s;
+}
