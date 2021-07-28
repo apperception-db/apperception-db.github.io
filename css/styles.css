@@ -68,7 +68,7 @@ main > .tagline {
 	height: 2.65rem;
 }
 
-iota .btn {
+.iota .btn {
   display: inline-block;
   margin: 6px;
   font-size: inherit;
@@ -113,4 +113,22 @@ iota .btn {
   transform: scaleX(0.7);
   opacity: 0;
   transition: transform 0.8s, opacity 0.3s;
+}
+
+.iota .btn-gray {
+  color: #6D6F7F;
+  border-color: #6D6F7F;
+}
+.iota .btn-gray:hover {
+  color: #E6EAEF;
+  background-color: #6D6F7F;
+}
+.iota .btn-gray:active {
+  background-color: #666877;
+}
+.iota .btn-gray:active:after {
+  background-color: #666877;
+}
+.iota .btn-gray:after {
+  background-color: #6D6F7F;
 }
